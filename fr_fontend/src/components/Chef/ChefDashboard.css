@@ -1,0 +1,164 @@
+
+
+.container {
+    display: flex;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .card {
+    width: 90%; 
+    max-width: 100%;
+    margin-left: 10%;
+  }
+  
+
+  .card-header {
+    background-color: #ff913e;
+    color: black;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .table {
+    display: table;
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .text-center{
+    text-align: center;
+  }
+
+  .table-row {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;    
+  }
+  
+  .table-cell {
+    display: table-cell;
+    padding: 10px;
+  }
+  
+  .table-header {
+    font-weight: bold;
+  }
+  
+  .table-link {
+    color: #ff913e;
+    text-decoration: none;
+  }
+
+ .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+  }
+  
+  .btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .btn:hover {
+    background-color: orange;
+  }
+  
+  .btn2{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn2:hover {
+    background-color: rgb(80, 216, 80);
+  }
+
+  @media (min-width:768px) {
+  
+    .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%
+  }
+  
+    .col-md-9 {
+  flex: 0 0 auto;
+  width: 75%
+  }
+}
+
+.align-middle {
+  vertical-align: middle !important
+}
+
+.chef-info {
+  text-align: center;
+}
+
+.welcome-message {
+  margin-top: 10px; 
+}
+
+.dashboard-content {
+  padding: 20px;
+}
+
+.profile-image {
+  margin-top: 50px; 
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.recipe-count-box {
+  background-color: #d58229e9;   
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px; 
+  height: 100px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.recipe-count {
+  font-size: 32px;
+  margin: 0;
+}
+
+.recipe-count-label {
+  font-size: 16px;
+  margin: 0;
+}
+
+
+.recipe-count-label {
+  font-size: 16px;
+  margin: 0;
+}
+

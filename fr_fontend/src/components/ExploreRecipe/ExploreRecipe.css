@@ -1,0 +1,154 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+.explore-recipe{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.explore-recipe h1{
+    color: #262626;
+    font-weight: 500;
+}
+
+.explore-recipe-text{
+    max-width: 60%;
+    columns: #808080;
+}
+
+.explore-recipe-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow: scroll;
+}
+
+.explore-recipe-list::-webkit-scrollbar{
+    display: none;
+}
+
+.explore-recipe-list-item img{
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.explore-recipe-list-item p{
+    margin-top: 10px;
+    color: #747474;
+    font-size: max(1.4vw,16px);
+    cursor: pointer;
+}
+
+.explore-recipe hr{
+    margin: -10px 0px;
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+}
+
+.explore-recipe-list-item .active{
+    border: 4px solid tomato;
+    padding: 2px;
+
+}
+
+
+.popup {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.float-end{
+  float: right;
+}
+
+.close {
+  /* position: absolute;
+  top: 10px;
+  right: 10px; */
+  float: right;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
+.popup img {
+  max-width: 100%;
+  max-height: 300px; 
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.popup h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.popup p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+  
+.mt-5{
+  margin-top: 25px;
+}
+
+@media (max-width:1050px){
+    .explore-recipe-text{
+        max-width: 100%;
+        font-size: 14px;
+    }
+}
