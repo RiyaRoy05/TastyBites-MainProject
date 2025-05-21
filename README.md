@@ -51,9 +51,3 @@ Create your personalized digital cookbook and explore global flavors from the co
 - REST API  
 - SQLite / MySQL
 
-
-🌐 Portfolio Website
-
-🐙 GitHub
-
-📧 Email: [riyaroy9747r@gmail.com]
